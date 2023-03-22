@@ -1,23 +1,21 @@
 #include <stdio.h>
-
-int fattoriale(int n)
+int fattoriale (int n)
 {
-    int y = 0;
-    int z = 1;
-    while(y < n)
+  int z = 1;
+    while(n>1)
     {
-        y = y + 1;
-        z = z * y;
-    }
     
+    z = z*n;
+    n--;
+    } 
     return(z);
 }
 
-int main()
+ int main()
 {
-    int numero;
-    printf("Inserisci un numero: ");
-    scanf("%d", &numero);
-    int f = fattoriale(numero);
-    printf("Il fattoriale di %d è %d\n", numero, f);
+int numero;
+printf("utente inserisce un numero");
+scanf("%d", &numero);
+int f = fattoriale (numero);
+printf("il fattoriale di %d è %d\n", numero, f);
 }
