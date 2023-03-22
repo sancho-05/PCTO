@@ -5,8 +5,8 @@ int i= 0;
 int a[6];
 while (i<6)
 {
-    a[i]=i;
+    a[i]=i*2;
     printf("%d", a[i]);
-    i= i+2;
+    i++;
 }
 }
