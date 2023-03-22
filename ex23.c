@@ -1,27 +1,22 @@
 #include <stdio.h>
 
-int main()
- {
+ int main()
+{
     int x;
-    int y;
-    int z; 
-
-    z = 0; 
-    printf("Inserisci un numero positivo: ");
-    scanf("%d", &x);
-    
-    while(x>0) 
-    {
-        printf("Inserisci un numero: ");
-        scanf("%d", &y);
-        z= z + y ;
-        x = x - 1;
-    }
-    
-    printf("La somma degli interi inseriti e': %d", z);
-    
-    return 0;
+    int z;
+    int somma = 0;
+    int media;
+printf("utente inserisce un numero");
+scanf("%d", &x);
+int y = x;
+while(y>0 && y<=x)
+{
+    y--;
+printf("utente inserisce un numero");
+scanf("%d", &z);
+somma = somma + z;
 }
-
-
-
+media = somma/x;
+printf("la somma di tutti i numeri che ho inserito è %d\n", somma);
+printf("la media è %d\n", media);
+}
