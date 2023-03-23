@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main()
@@ -10,3 +11,16 @@ int main()
     }
     printf("La parola %s è composta da %d lettere\n", a, i);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
