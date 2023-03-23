@@ -1,20 +1,18 @@
 #include <stdio.h>
 
-void stampa_caratteri(char *str)
-
+void stampa(char *L)
 {
     int i = 0;
-    while(str[i]) != '\0')
+
+    while(L[i] != 0)
     {
-        printf("%c\n", str[i]);
-        i++;
+        printf("%c\n", L[i]);
+        i = i + 1;
     }
 }
-
-printf("%s", str);
-
-int main ()
+int main()
 {
-    char *s= "daje roma daje";
-    stampa_caratteri(s);
-}  
+    char *L = "daje roma daje";
+
+    stampa (L);
+}
