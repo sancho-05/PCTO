@@ -1,38 +1,38 @@
-# include  < stdio.h >
+#include <stdio.h>
 
-int  primo ( int x)
+int primo (int x)
 {
-    int y = x- 1 ;
-    mentre (y> 1 )
+    int y = x-1;
+    while(y>1)
     {
-    se (x%y== 0 )
+    if(x%y==0)
     {
-      ritorno ( 0 );
+      return (0);
     }
     y--;
     }
-    se (y== 1 )
+    if(y==1)
     {
-        ritorno ( 1 );
+        return (1);
     }
-}
+ }
 
- int  principale ()
-{
+ int main()
+ {
   int w;
-    printf ( " inserisci un numero " );
-    scanf ( " %d " , &w);
+    printf("inserisci un numero");
+    scanf("%d", &w);
     int a [w];
-    int io= 0 ;
-    intero p = 2 ;
-    mentre (i<w)
+    int i=0;
+    int p = 2;
+    while(i<w)
     {
-        se ( primo (p))
+        if(primo(p))
         {
-            a[io]=p;
-            printf ( " array %d \n " , a[i]);
-            io++;
+            a[i]=p;
+            printf("array %d\n", a[i]);
+            i++;
         }
         p++;
     }
-}
+ }
